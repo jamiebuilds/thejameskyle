@@ -7,12 +7,12 @@ var map = require('lodash.map');
 var startCase = require('lodash.startcase');
 var thejameskyle = require('./');
 
-var cli = meow([
+meow([
 	'Usage',
-	'  $ thejameskyle',
+	'  $ thejameskyle'
 ]);
 
-var str = map(thejameskyle, function(val, key) {
+var str = map(thejameskyle, function (val, key) {
 	return startCase(key) + ': ' + val;
 }).join('\n');
 

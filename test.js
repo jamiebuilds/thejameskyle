@@ -1,6 +1,6 @@
 import test from 'ava';
-import fn from './';
+import thejameskyle from './';
 
 test('title', t => {
-	t.is(fn('unicorns'), 'unicorns & rainbows');
+	t.is(thejameskyle.firstName, 'James');
 });
